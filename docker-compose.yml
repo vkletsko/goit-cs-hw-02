@@ -1,6 +1,6 @@
 version: '3'
 services:
-  postgres:
+  psql:
     image: postgres:12
     environment:
       POSTGRES_DB: hw02
@@ -13,4 +13,4 @@ services:
     ports:
       - "80:8000"
     depends_on:
-      - postgres
+      - psql
